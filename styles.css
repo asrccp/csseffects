@@ -1,0 +1,52 @@
+/*Simple Background Color for Page*/
+body {
+  background-color: rgb(5, 0, 8);
+}
+/*The Heading Color*/
+h1 {
+  color: rgb(197, 98, 255);
+  text-align: center;
+}
+/*The Button and it's color fading animation*/
+button {
+  background-color: rgb(255, 255, 255);
+  animation-name: colorfade;
+  animation-duration: 8s;
+}
+/*Each colorchange at a percentage of the animation*/
+@keyframes colorfade {
+  0%   {background-color: rgb(255, 255, 255);}
+  25%  {background-color: rgb(43, 43, 43);}
+  50%  {background-color: rgb(182, 0, 0);}
+  90% {background-color: rgb(241, 174, 97);}
+  100% {background-color: rgb(241, 174, 97);}
+}
+
+/*The normal text format*/
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: rgb(255, 246, 195);
+}
+/*The normal link text format*/
+a:link {
+  font-family: verdana;
+  font-size: 20px;
+  color: rgb(150, 127, 0);
+}
+/*The format of the text when hovered upon*/
+a:hover {
+  font-family: verdana;
+  font-size: 30px;
+  color:#FFA500;
+}
+/*The image's transformation information*/
+img {
+  width: 200px;
+  height: auto;
+  transition: all ease-out 2s; 
+}
+/*The transformation of the image when hovered on to increase in size at the 2s easing mentioned above.*/
+img:hover {
+  transform: scale(1.5);
+}
